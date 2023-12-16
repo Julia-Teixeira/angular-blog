@@ -1,0 +1,31 @@
+.container__article__smallCard {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+.container__article__smallCard figure img {
+  width: 200px;
+}
+.content__smallCard span {
+  color: var(--white);
+  opacity: 0.3;
+  font-size: 0.6875rem;
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+}
+
+.content__smallCard h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--white);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.card__separator {
+  color: var(--text-card-color);
+  opacity: 0.1;
+  width: 100%;
+
+  margin-top: 1.5rem;
+}

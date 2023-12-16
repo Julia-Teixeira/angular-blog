@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #121212;
+  --white: #fff;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-card-color: rgba(255, 255, 255, 0.507);
+  --text-color: #f8f8f8;
+  --text-color-secondary: #696969;
+  --text-color-tertiary: #353535;
+
+  --font-size-title-big: 15.1rem;
+  --font-size-title-medium: 9rem;
+  --font-size-title-small: 3.5rem;
+  --font-size-body: 1rem;
+  --font-size-secondary: 0.8rem;
+  --font-size-tertiary: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+ul,
+ol {
+  list-style: none;
+}
