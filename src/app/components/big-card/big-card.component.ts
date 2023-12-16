@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { dataFake } from 'src/app/data/dataFake';
 import formatedData from 'src/app/data/formatedData';
 ('../../data/formatedData');
 
@@ -8,6 +9,8 @@ import formatedData from 'src/app/data/formatedData';
   styleUrls: ['./big-card.component.css'],
 })
 export class BigCardComponent implements OnInit {
+  dataFake = dataFake;
+
   constructor() {}
 
   ngOnInit(): void {}

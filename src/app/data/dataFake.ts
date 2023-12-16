@@ -1,4 +1,4 @@
-const dataFake = [
+export const dataFake = [
   {
     id: 1,
     title: 'Descoberta de Nova Espécie de Borboleta',

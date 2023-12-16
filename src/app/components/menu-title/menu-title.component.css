@@ -3,13 +3,14 @@ h1 {
   border-bottom: 1px solid var(--border-color);
   text-align: center;
   font-size: var(--font-size-title-small);
-  line-height: 15rem;
+  line-height: 10rem;
   margin: 20px 0px 60px;
 }
 
 @media screen and (min-width: 425px) {
   h1 {
     font-size: 5rem;
+    line-height: 13rem;
   }
 }
 
@@ -22,11 +23,13 @@ h1 {
 @media screen and (min-width: 768px) {
   h1 {
     font-size: var(--font-size-title-medium);
+    line-height: 13rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: var(--font-size-title-big);
+    line-height: 17rem;
   }
 }

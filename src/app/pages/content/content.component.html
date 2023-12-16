@@ -1,1 +1,18 @@
-<p>content works!</p>
+<article class="container__article">
+  <h1>{{ title }}</h1>
+
+  <section class="container__content">
+    <figure>
+      <img src="{{ photoCover }}" alt="{{ title }}" />
+    </figure>
+
+    <div class="container__text">
+      <p>{{ content }}</p>
+
+      <div class="container__date">
+        <span>Data da publicação</span>
+        <span>{{ createdAt }}</span>
+      </div>
+    </div>
+  </section>
+</article>

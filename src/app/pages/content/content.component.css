@@ -1,0 +1,99 @@
+.container__article {
+  padding-bottom: 0 1.5rem 0 3rem;
+}
+
+.container__article h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+
+  padding: 3rem 0;
+  margin: 20px 0px 60px;
+}
+
+.container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container__content figure {
+  width: 100%;
+}
+
+.container__content figure img {
+  width: 100%;
+}
+
+.container__content .container__text {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+
+  color: var(--white);
+  opacity: 0.8;
+}
+.container__content .container__text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 3rem;
+}
+
+.container__date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 425px) {
+  .container__article h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .container__article h1 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__article h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__article h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .container__content {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .container__content figure {
+    width: 50%;
+  }
+
+  .container__content .container__text {
+    padding-top: 0;
+    padding-left: 3rem;
+    border-left: 1px solid var(--border-color);
+    border-top: none;
+    width: 50%;
+  }
+}

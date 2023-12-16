@@ -1,15 +1,18 @@
-<article class="container__article__smallCard">
-  <figure>
-    <img
-      src="https://img.freepik.com/fotos-premium/um-gato-com-uniforme-de-bombeiro-e-chapeu-de-bombeiro_36682-2498.jpg?size=626&ext=jpg"
-      alt="Gato Heroico Salva Família de Incêndio"
-    />
-  </figure>
-  <div class="content__smallCard">
-    <span>{{ newDate("2023-02-05T12:30:00Z") }}</span>
-    <h3>Gato Heroico Salva Família de Incêndio</h3>
+<article *ngFor="let post of dataFake">
+  <a
+    [routerLink]="['/content', post.id]"
+    title="{{ post.title }}"
+    class="container__article__smallCard"
+  >
+    <figure>
+      <img src="{{ post.photo }}" alt="{{ post.title }}" />
+    </figure>
+    <div class="content__smallCard">
+      <span>{{ newDate(post.createdAt) }}</span>
+      <h3>{{ post.title }}</h3>
+    </div>
+  </a>
+  <div class="card__separator" *ngIf="post.id < dataFake.length + 1">
+    <hr />
   </div>
 </article>
-<div class="card__separator">
-  <hr />
-</div>
